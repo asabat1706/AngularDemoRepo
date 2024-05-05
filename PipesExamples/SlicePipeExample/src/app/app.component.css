@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.product-nav-container{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+}
+.product-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: none;
+}
+.product-item > img{
+    max-height: 400px;
+    max-width: 400px;
+}
+.product-item > h2{
+    max-width: 400px;
+    text-align: center;
+}
+.product-nav-container > button{
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}

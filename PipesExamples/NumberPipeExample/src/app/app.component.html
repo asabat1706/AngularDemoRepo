@@ -1,0 +1,9 @@
+<div class="outer-container">
+    <h1> Weight Converter </h1>
+    <div class="container">
+        <label for="inputNumber" class="container-item">Enter weight in pounds</label>
+        <input name="inputNumber" type="number" class="container-item" [(ngModel)]="poundInput">
+        <button class="container-item" (click)="calculateKg()"> Convert </button>
+    </div>
+    <p> Weight in kilgrams:  {{final_value | number: '2.2-2'}}</p>
+</div>

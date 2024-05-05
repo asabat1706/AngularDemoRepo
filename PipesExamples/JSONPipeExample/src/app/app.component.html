@@ -1,0 +1,23 @@
+<h1> JSON Converter </h1>
+<table>
+  <thead><tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Major</th>
+  </tr></thead>
+  <tbody>
+    @for (item of students; track $index) {
+      <tr>
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.gender}}</td>
+        <td>{{item.major}}</td>
+      </tr>
+    }
+  </tbody>
+</table>
+<button (click)="convertToJSON()"> JSON Value </button>
+@if(jsonDisplay == true){
+  <div>{{students | json}}</div>
+}

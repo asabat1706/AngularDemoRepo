@@ -1,0 +1,35 @@
+.outer-container{
+    height: 500px;
+    width: 500px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin-left: 30%;
+}
+h1,p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-item{
+    max-width: 200px;
+    padding: 10px;
+    margin: 5px;
+}
+.container > label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.container > input{
+    border-radius: 5px;
+}
+.container > button {
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}

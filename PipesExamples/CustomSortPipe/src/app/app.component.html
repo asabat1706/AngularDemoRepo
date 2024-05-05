@@ -1,0 +1,26 @@
+<div class="container">
+<h1 class="container-item"> Number Sort Pipe </h1>
+  <div class="button-container container-item">
+    <button class="button-container-item" (click)="updateSort('asc')"> Ascending </button>
+    <button class="button-container-item" (click)="updateSort('desc')"> Descending </button>
+  </div>
+  @if(sortType === 'asc' ){
+    <div class="container-item list-container">
+      <ul>
+        @for (item of dataList | numberSortPipe : 'asc'; track $index) {
+          <li>{{item}}</li>
+        }
+     </ul>
+    </div>
+    
+  }@else {
+    <div class="container-item list-container">
+      <ul>
+        @for (item of dataList | numberSortPipe : 'desc'; track $index) {
+          <li>{{item}}</li>
+        }
+     </ul>
+    </div>
+    
+  }
+</div>

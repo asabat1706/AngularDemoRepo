@@ -1,0 +1,8 @@
+img{
+    height: 400px;
+}
+.photo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

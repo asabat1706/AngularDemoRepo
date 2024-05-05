@@ -1,0 +1,23 @@
+<h1> Slice Pipe Example </h1>
+<div class="product-container">
+  @for (item of products | slice : start_index: end_index ; track $index) {
+    <div class="product-item">
+      <h2> {{item.name}} </h2>
+      <img [alt]="item.name" [src]="item.imageUrl">
+    </div>
+  } 
+</div>
+<div class="product-nav-container">
+  @if (start_index == 0) {
+    <button (click)="prevSet()" disabled>Prev</button>
+  }@else{
+    <button (click)="prevSet()">Prev</button>
+  }
+  @if(end_index == products.length) {
+    <button (click)="nextSet()" disabled >Next</button>
+  }@else{
+    <button (click)="nextSet()">Next</button>
+  }
+ 
+  
+</div>
